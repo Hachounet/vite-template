@@ -10,6 +10,16 @@ function App() {
 
   const person = { first: name };
 
+  const array = [1, 2, 3, 4];
+
+  function generateError() {
+    var unusedVar = 42;
+    let anotherUn = 'hello';
+
+    console.log('This line has a problem');
+    return 'This function generates an ESLint error';
+  }
+
   console.log(person);
 
   const sayHelloLinting = (fName) => {
